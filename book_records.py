@@ -1,4 +1,5 @@
 import pickle
+from pathlib import Path
 from collections import UserDict
 from datetime import datetime
 
@@ -94,12 +95,12 @@ class Record:
 class ContactBook(UserDict):
     """A contact management class that stores, retrieves, updates, and deletes contact records"""
 
-    def save_data(self, filename="contactbook.pkl"):
+    def save_data(self, filename=Path):
         with open(filename, "wb") as f:
             pickle.dump(self, f)
 
     @classmethod
-    def load_data(cls, filename="contactbook.pkl"):
+    def load_data(cls, filename=Path):
         try:
             with open(filename, "rb") as f:
                 return pickle.load(f)
