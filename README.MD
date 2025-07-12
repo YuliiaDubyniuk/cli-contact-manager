@@ -53,11 +53,15 @@ Alternatively, you can simply double-click the executable `cli_contact_manager.p
 > If no file is specified, contacts will be saved to  
 > **`<your home directory>\contactbook.pkl`**
 
+---
+
 ## ⚙️ Requirements
 
 Python 3.10+
 
 (Optional for building executable) PyInstaller
+
+---
 
 ## 💬 Available Commands
 
